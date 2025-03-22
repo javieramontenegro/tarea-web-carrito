@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fukusuke sushi</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container-header">
+        <nav>
+          <a href="">
+            <img src="./img/sushi.svg" alt="logo" class="logo" />
+          </a>
+          <ul>
+            <li>
+              <a href=""> Home </a>
+            </li>
+            <li>
+              <a href=""> Productos </a>
+            </li>
+            <li>
+              <a href=""> Sucursales </a>
+            </li>
+            <li>
+              <a href=""> Nosotros </a>
+            </li>
+            <li>
+              <a href=""> Contacto </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="container-principal">
+          <!-- SECTION TITLE & STEPS -->
+          <section class="section-title">
+            <div class="container-steps">
+              <h2>Confirmar Pedido</h2>
+              <div class="container-steps-span">
+                <div class="wrapp-step">
+                  <span class="span-step">1</span>
+                  <p>Productos</p>
+                  <p>></p>
+                </div>
+                <div class="wrapp-step">
+                  <span class="span-step active">2</span>
+                  <p>Confimación</p>
+                  <p>></p>
+                </div>
+                <div class="wrapp-step">
+                  <span class="span-step disabled">3</span>
+                  <p>Pago</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- SECTION PAGO -->
+          <section class="section-pago">
+            <div class="container-pago">
+              <!-- CONTAINER RESUME -->
+              <div class="container-resume">
+                <h3>Resumen de tu orden</h3>
+                <p class="p-light">
+                  Revisa los productos seleccionados y selecciona el metodo de
+                  envio
+                </p>
+                <!-- CARD SUSHI -->
+                <div class="card-sushi">
+                  <div class="sushi-info">
+                    <div class="img-sushi"></div>
+                    <div class="container-info-sushi">
+                      <p>100 piezas lux</p>
+                      <div class="container-btn-plus">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                      </div>
+                      <p>$30.000 c/u x 1</p>
+                      <p><b>$30.000</b></p>
+                    </div>
+                  </div>
+                  <button class="btn-close">X</button>
+                </div>
+                <!-- DELIVERY O RETIRO -->
+                <div class="div-delivery">
+                  <h4>¿Delivery o retiro en tienda?</h4>
+                  <form action="">
+                    <label class="btn-check">
+                      <div>
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/711/711251.png"
+                          alt="Bolsa"
+                        />
+                        Delivery
+                      </div>
+                      <input type="radio" id="retiro" name="metodo" />
+                      <span class="radio-custom"></span>
+                    </label>
+                    <label class="btn-check">
+                      <div>
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/711/711251.png"
+                          alt="Bolsa"
+                        />
+                        Retiro
+                      </div>
+                      <input type="radio" id="retiro" name="metodo" />
+                      <span class="radio-custom"></span>
+                    </label>
+                  </form>
+                </div>
+              </div>
+              <!-- CONTAINER FORM -->
+              <div class="container-resume back-grey">
+                <h3>Datos de pago</h3>
+                <p class="p-light">Completa tus datos para realizar el pago.</p>
+                <form action="">
+                  <label>Tu Nombre</label>
+                  <input type="text" />
+                  <label>Apelido</label>
+                  <input type="text" />
+                  <label>RUT</label>
+                  <input type="number" />
+                  <label>Correo electrónico</label>
+                  <input type="email" />
+                  <label>Teléfono</label>
+                  <input type="number" />
+                  <label>Comentarios</label>
+                  <textarea name="comentarios" id="comentarios"></textarea>
+                  <label class="btn-check">
+                    <div>
+                      <img
+                        src="./img/transferencia.svg"
+                        alt="Transferencia"
+                        class="img-tranferencia"
+                      />
+                      Transferencia bancaria
+                    </div>
+                    <input type="radio" id="retiro" name="metodo" />
+                    <span class="radio-custom"></span>
+                  </label>
+                </form>
+                <div class="container-subtotal">
+                  <div>
+                    <span>Subtotal</span>
+                    <span>$30.000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
