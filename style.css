@@ -384,3 +384,46 @@ footer {
     padding: 0;
    font-weight: bold;
 }
+
+@media only screen and (max-width: 800px) {
+    .container-pago {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .container-steps-span{
+        flex-direction: column;
+    }
+    .container-steps{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-header ul{
+        width: 100%;
+    }
+    .container-resume{
+        max-width: 100%;
+    }
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+        font-size: 12px;
+    }
+
+  }
